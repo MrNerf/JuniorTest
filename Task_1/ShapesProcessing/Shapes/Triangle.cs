@@ -27,7 +27,7 @@ namespace ShapesProcessing.Shapes
         public override double GetSquare()
         {
             if (IsRightTriangle())
-                return (double) (_firstLeg + _secondLeg) / 2;
+                return (double) (_firstLeg * _secondLeg) / 2;
             var p = ((double) (_sideA + _sideB + _sideC)) / 2;
             return Math.Sqrt(p * (p - _sideA) * (p - _sideB) * (p - _sideC));
         }
